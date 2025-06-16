@@ -50,7 +50,7 @@
 #define configTICK_RATE_HZ                      ( (TickType_t)(100) )
 #define configMAX_PRIORITIES                    ( 5 )
 #define configMINIMAL_STACK_SIZE                ( (unsigned short)(128) )
-#define configTOTAL_HEAP_SIZE                   ( (size_t)(4096) )
+#define configTOTAL_HEAP_SIZE                   ( (size_t)(8192) )
 #define configMAX_TASK_NAME_LEN                 ( 16 )
 #define configUSE_TRACE_FACILITY                ( 0 )
 #define configUSE_16_BIT_TICKS                  ( 0 )
@@ -95,6 +95,10 @@
 #define INCLUDE_xTaskAbortDelay                 ( 1 )
 #define INCLUDE_xTaskGetHandle                  ( 1 )
 #define INCLUDE_xSemaphoreGetMutexHolder        ( 1 )
+#define INCLUDE_xSemaphoreGive                  ( 1 )
+#define INCLUDE_xSemaphoreTake                  ( 1 )
+#define INCLUDE_xSemaphoreCreateCounting        ( 1 )
+#define INCLUDE_xTaskCreate                     ( 1 )
 
 /* Normal assert() semantics without relying on the provision of an assert.h header file. */
 void vAssertCalled( void );

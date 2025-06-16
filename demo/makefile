@@ -58,11 +58,11 @@ RISCV_PREFIX ?= riscv-none-elf-
 EFFORT = -Os
 
 # Adjust processor IMEM size and base address
-USER_FLAGS += -Wl,--defsym,__neorv32_rom_size=16k
+USER_FLAGS += -Wl,--defsym,__neorv32_rom_size=32k
 USER_FLAGS += -Wl,--defsym,__neorv32_rom_base=0x00000000
 
 # Adjust processor DMEM size and base address
-USER_FLAGS += -Wl,--defsym,__neorv32_ram_size=8k
+USER_FLAGS += -Wl,--defsym,__neorv32_ram_size=16k
 USER_FLAGS += -Wl,--defsym,__neorv32_ram_base=0x80000000
 
 # Software framework, HAL, build environment, etc.
