@@ -1,0 +1,15 @@
+Pra rodar o processador basta incluir todas os arquivos da pasta neorv32/rtl/core/ com o top level neorv32_top.vhd
+
+Para compilar o programa da multiplicacao de matriz usando CFS:
+
+cd neorv32/sw/example/matriz_cfs
+make clean_all exe
+
+agora so precisa copiar o .bin gerado para a placa
+
+para rodar o FreeRTOS (deve funcionar agora!):
+
+cd demo/
+make clean_all exe
+
+copiar o .bin pra placa
